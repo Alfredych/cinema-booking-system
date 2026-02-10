@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+
+body, h1, h2, h3, p, ul {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-size: inherit;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+button {
+  border: none;
+}
+
+
+:root {
+  --client-color: #C76F00;
+  --client-background-color: #F1EBE6F2;
+  --button-ok-color: #16A6AF;
+  --admin-header-color: #63536C;
+  --admin-background-color: #EAE9EBF2;
+  --admin-minor-color: #848484;
+}
+
+/* main */
+body {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  font-family: "Roboto", "Tahoma", sans-serif;
+  background-color: initial !important;
+}
+
+a:hover {
+  color: var(--button-ok-color);
+  cursor: pointer;
+}
+
+button:hover {
+  color: #000000;
+  background-color: #ffffff;
+  cursor: pointer;
+}
