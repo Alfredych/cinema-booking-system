@@ -1,0 +1,175 @@
+.popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+
+  display: flex;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
+  display: none;
+}
+
+.popup__container {
+  position: relative;
+
+  width: 960px;
+  margin: auto;
+}
+
+.popup__content {
+  max-height: 95vh;
+  background-color: var(--admin-background-color);
+  overflow-y: auto;
+}
+
+.popup__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 42px;
+
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background-color: var(--admin-header-color);
+}
+
+.btn_close {
+  width: 22px;
+  height: 22px;
+
+  background-color: inherit;
+  background-image: url("../assets/svg/close.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.btn_close:hover {
+  background-color: inherit;
+}
+
+.popup__form {
+  padding: 34px 9px;
+}
+
+.popup__settings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.actions_popup {
+  margin-top: 42px;
+}
+
+.popup__label {
+  width: 752px;
+  margin-bottom: 1px;
+}
+
+.popup__input {
+  width: 752px;
+  margin-bottom: 7px;
+}
+
+.popup__input:last-child {
+  margin-bottom: 0;
+}
+
+.popup__textarea {
+  box-sizing: border-box;
+  width: 752px;
+  min-width: 752px;
+  max-width: 752px;
+  height: 80px;
+  margin-bottom: 7px;
+  padding: 7px;
+
+  font-size: 16px;
+
+  border: 1px solid #B7B7B7;
+}
+
+.popup__select {
+  box-sizing: border-box;
+  width: 752px;
+  margin-bottom: 7px;
+  padding: 7px;
+
+  font-size: 16px;
+
+  border: 1px solid #B7B7B7;
+  background-image: url('../assets/svg/dropdown-icon.svg');
+  background-position: right 14px center;
+  background-repeat: no-repeat;
+  appearance: none;
+}
+
+.upload-poster_label {
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.upload-poster_label:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.upload-poster_label-selected {
+  color: var(--admin-header-color);
+  background-color: #ffffff;
+}
+
+.upload-poster_input {
+  display: none;
+}
+
+/* style for tablet */
+@media (max-width: 1199px) {
+  .popup__container {
+    width: 100%;
+  }
+
+  .popup__label {
+    width: 100%;
+  }
+
+  .popup__input {
+    width: 100%;
+  }
+
+  .popup__textarea {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .popup__select {
+    width: 100%;
+  }
+}
+
+/* style for mobile */
+@media (max-width: 640px) {
+  .popup__form {
+    padding: 16px 9px 34px;
+  }
+
+  .actions_popup {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+  }
+
+  .popup__btn {
+    width: 200px;
+  }
+}
