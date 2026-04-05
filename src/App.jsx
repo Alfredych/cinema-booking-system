@@ -1,4 +1,6 @@
 import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import HomePage from './components/HomePage.jsx';
 import Login from './components/Login.jsx';
 import AdminPage from './components/AdminPage.jsx';
@@ -6,8 +8,6 @@ import Hall from './components/Hall.jsx';
 import Payment from './components/Payment.jsx';
 import Ticket from "./components/Ticket.jsx";
 import NotFound from './components/NotFound.jsx';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/client.css';
 import './css/admin.css';
 import './css/popup.css';

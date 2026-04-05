@@ -151,6 +151,7 @@ body {
 .movies__img {
   width: 125px;
   position: relative;
+  overflow: visible;
 }
 
 .movies__img::after {
@@ -158,11 +159,11 @@ body {
   left: 125px;
   top: 0;
 
-  display: block;
   content: "";
-  width: 6px;
+  width: 20px;
   height: 14px;
   background-color: #393939;
+  z-index: 9999;
 }
 
 .movies__description {
