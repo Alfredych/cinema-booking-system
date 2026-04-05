@@ -41,16 +41,18 @@ const MoviesSection = () => {
         {availableFilms.map(film => {
           return (
             <section className="movies__section" key={film.id}>
-              <div className="movies__info">
-                <img className="movies__img" src={film.film_poster} alt="постер" />
-                <div className="movies__description">
-                  <h2 className="movies__title">{film.film_name}</h2>
-                  <p className="movies__annotation">{film.film_description}</p>
-                  <p className="movies__notes">
-                    <span className="movies__duration">{film.film_duration} минут{getEndOfWord(film.film_duration, "минут")}</span>
-                    <span className="movies__country">{film.film_origin}</span>
-                  </p>
-                </div>
+                <div className="movies__info">
+                    <div class="movies__img-wrapper">
+                        <img className="movies__img" src={film.film_poster} alt="постер" />
+                    </div>
+                    <div className="movies__description">
+                        <h2 className="movies__title">{film.film_name}</h2>
+                        <p className="movies__annotation">{film.film_description}</p>
+                        <p className="movies__notes">
+                            <span className="movies__duration">{film.film_duration} минут{getEndOfWord(film.film_duration, "минут")}</span>
+                            <span className="movies__country">{film.film_origin}</span>
+                        </p>
+                    </div>
               </div>
 
               <div className="movies__halls">
