@@ -155,14 +155,14 @@ body {
 }
 
 .movies__img {
-  width: 100%;
+  width: 125px;
   height: auto;
 }
 
 .movies__img-wrapper::after {
   content: "";
   position: absolute;
-  left: 101%;
+  left: 126px;
   top: 0;
   width: 6px;
   height: 14px;
